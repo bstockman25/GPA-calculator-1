@@ -1,0 +1,148 @@
+html{
+	height: 100%;
+}
+body {
+    background-color: #F1B82D;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.navbar {
+	position: relative;
+	height: 60px; 
+	top: 0px;
+	width:auto;
+	background-color: black;
+	margin-bottom: 30px;
+}
+
+
+#header { 
+	height: 90px; 
+	top: 0;
+	width:auto;
+	background-color: black;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	
+}
+
+
+#center{
+	background-color: black;
+	position: absolute;
+	top: 600px;
+    width: 75%;
+    height: 1000px;
+	border-radius: 15px;
+	left: 50%;
+	margin-right: -50%;
+	
+	transform: translate(-50%, -50%);
+	margin-bottom: 30px;
+}
+
+#left-stripe{
+	background-color: white;
+	width: 10px;
+	height: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#right-stripe{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#content{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 85%;
+	color: white;
+}
+
+/*#GPAestimate{
+	
+}*/
+
+ul#menu {
+	position: absolute;
+	padding: 0;
+	left: 3px;
+}
+ul#menu li {
+	display: inline;
+}
+ul#menu li a {
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+ul#menu li a:hover {
+	background-color: #F1B82D;
+} 
+
+
+ul#menu2 {
+	position: absolute;
+	padding: 10px;
+	left: 50%;
+	margin-right: -50%;
+	
+	transform: translate(-50%, -50%);
+	top: 10px;
+	
+}
+ul#menu2 li {
+	display: inline;
+}
+ul#menu2 li a {
+	
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffffff;
+}
+ul#menu2 li a:hover {
+	background-color:#F1B82D;
+}
+
+ul#menu3 {
+	position: absolute;
+	right: 3px;
+}
+ul#menu3 li {
+	display: inline;
+}
+ul#menu3 li a {
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+ul#menu3 li a:hover {
+	background-color:#F1B82D;
+}
+
+footer#foot01 {
+	position: absolute;
+	top: 1150px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	bottom: 0; 
+	height:20px;   
+}
