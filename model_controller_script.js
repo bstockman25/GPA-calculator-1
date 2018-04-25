@@ -41,11 +41,11 @@ app.config(function($routeProvider) {
 
 // Controllers
 app.controller('MainController', function($scope) {
-  $scope.message = 'To create or add a new class to a semester simply slick add.To review or edit an existing semester please click edit If you are dine with the GPA monitor/forcaster just click logout (it is all pretty intuitive)';
+  $scope.message = '';
 });
 
 app.controller('EditController', function($scope) {
-  $scope.message = 'Hello from EditController';
+  $scope.message = '';
 });
 
 app.controller('NewController', function($scope) {
@@ -53,13 +53,13 @@ app.controller('NewController', function($scope) {
 });
 
 app.controller('ClassController', function($scope) {
-  $scope.message = 'make this work';
+  $scope.message = '';
 });
 
 app.controller('GPAController', function($scope) {
-  $scope.message = 'Well, Were getting there.';
+  $scope.message = '';
 });
 
 app.controller('SemesterController', function($scope) {
-  $scope.message = 'table needs populated from the DB';
+  $scope.message = '';
 });
