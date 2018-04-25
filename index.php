@@ -50,5 +50,5 @@
             <p>  <?php echo date("Y"); ?> GPA-calculator. All rights reserved.</p>
         </footer>
     </body>
-  </body>
+</body>
 </html>
