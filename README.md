@@ -2,8 +2,8 @@
 A php, mysql, and angularJS gpa calculator with user data storage
 
 ### Group Members
-Jason Pulis
-Ben Stockman
-Bradley Boutaugh
-Carmel Braga
-Eric Mitchell
+- Jason Pulis
+- Ben Stockman
+- Bradley Boutaugh
+- Carmel Braga
+- Eric Mitchell
