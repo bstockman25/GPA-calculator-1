@@ -1,9 +1,22 @@
 <!-- edit -->
 <h1>Edit</h1>
-<ul>
-	<li><a href= #/editGPA>Starting GPA</a></li>
-</ul>
-<ul>
-	<li><a href= #/viewSemester>class</a></li>
-</ul>
+<table>
+  <tr>
+    <th>Class</th>
+    <th>GPA</th>
+  </tr>
+  <tr>
+  	<td><a href= #/editGPA>Starting GPA</a></td>
+  	<td>%</td>
+  </tr>
+  <tr>
+  	<td><a href= #/viewSemester>class</a></td>
+  	<td>%</td>
+  </tr>
+  <tr>
+  	<td></td>
+  	<td>grade % from the DB</td>
+  </tr>
+</table>
+<table>
 <h3>{{message}}</h3>

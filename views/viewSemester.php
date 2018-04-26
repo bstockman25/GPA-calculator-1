@@ -31,6 +31,7 @@
     </th>
   </tr>
 </table>
-<input type="button" value="update DB" onclick=""/>
-<input type="button" value="back" onclick="window.location.href='#/edit'"/>
+<input type="button" value="Update DB" onclick=""/>
+<input type="button" value="New Class" onclick="window.location.href='#/new'"/>
+<input type="button" value="Back" onclick="window.location.href='#/edit'"/>
 <h3>{{message}}</h3>
