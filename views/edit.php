@@ -6,15 +6,15 @@
     <th class="percent">GPA</th>
   </tr>
   <tr>
-  	<td><a href= #/editGPA>Starting GPA</a></td>
+  	<td><a href= #/editGPA>Starting GPA:</a></td>
   	<td class="percent">%</td>
   </tr>
-  <tr>
-  	<td><a href= #/viewSemester>semester 2020</a></td>
-  	<td class="percent">%</td>
+  <tr ng-repeat="x in semesters">
+  	<td ><a href= #/viewSemester>{{x.semester + ' ' + x.year + ':'}}</a></td>
+  	<td class="percent">{{x.grade}}</td>
   </tr>
   <tr>
-  	<td>grade from the DB</td>
+  	<td>Cumulative GPA</td>
   	<td class="percent">%</td>
   </tr>
 </table>

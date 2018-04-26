@@ -45,6 +45,12 @@ app.controller('MainController', function($scope) {
 });
 
 app.controller('EditController', function($scope) {
+    // the GET request will need to go here
+    $scope.semesters = [
+        {semester:'Fall',year:'2018',grade:4.0},
+        {semester:'Spring',year:'2018',grade:3.3},
+        {semester:'Summer',year:'2018',grade:3.7}
+    ];
   $scope.message = '';
 });
 
