@@ -12,7 +12,7 @@
   <p>Class Year: <input type="text" name="cYear"></p>
   <p>Credits: <input type="text" name="cCredits"></p>  
   <input type="submit" value="Submit" onclick=>
-  <input type="button" value="Cancel" onclick="window.location.href='#/edit'"/>
+  <input type="button" value="Cancel" onclick="window.location.href='#/viewSemester'"/>
   <input type="button" value="Delete" onclick="">
 </form>
 <h3>{{message}}</h3>
