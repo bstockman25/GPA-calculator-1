@@ -10,6 +10,7 @@
     <td><a href= #/editClass>Class Name from DB</a></td>
     <td>
       <select>
+        <option value="" selected disabled hidden>Choose Grade</option>
         <option value="4.0">A+</option>
         <option value="4.0">A</option>
         <option value="3.7">A-</option>
