@@ -6,7 +6,7 @@
   <select name="Semester">
     <option value="Fall">Fall</option>
     <option value="Spring">Spring</option>
-    <option value="Summer-">Summer-</option>
+    <option value="Summer">Summer</option>
     <option value="Interim">Interim</option>
   </select></p>
   <p>Class Year: <input type="text" name="cYear"></p>
