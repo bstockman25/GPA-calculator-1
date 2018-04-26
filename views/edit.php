@@ -2,7 +2,7 @@
 <h1>Edit</h1>
 <table id="editTable">
   <tr>
-    <th>Class</th>
+    <th>Semester</th>
     <th class="percent">GPA</th>
   </tr>
   <tr>
@@ -10,7 +10,7 @@
   	<td class="percent">%</td>
   </tr>
   <tr>
-  	<td><a href= #/viewSemester>class</a></td>
+  	<td><a href= #/viewSemester>semester 2020</a></td>
   	<td class="percent">%</td>
   </tr>
   <tr>

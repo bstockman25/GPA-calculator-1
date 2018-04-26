@@ -1,9 +1,14 @@
 <!-- viewSemester -->
 <h1>Semester *year from DB</h1>
-<table>
+<table id="viewSemester">
   <tr>
-    <th><a href= #/editClass>Class Name from DB</a></th>
-    <th>
+    <th>Class</th>
+    <th>Grade</th>
+    <th>Grade</th>
+  </tr>
+  <tr>
+    <td><a href= #/editClass>Class Name from DB</a></td>
+    <td>
       <select>
         <option value="4.0">A+</option>
         <option value="4.0">A</option>
@@ -19,16 +24,22 @@
         <option value="0.7">D-</option>
         <option value="0.0">F</option>
       </select>
-    </th>
-    <th>grade % from the DB</th>
+    </td>
+    <td>grade % from the DB</td>
   </tr>
 </table>
-<table>
+<table id="semesterGPA">
   <tr>
-    <th>GPA</a></th>
-    <th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>
       <textarea rows="1" cols="5" name="GPAestimate" id="GPAestimate"></textarea>
-    </th>
+    </td>
   </tr>
 </table>
 <input type="button" value="Update DB" onclick=""/>
