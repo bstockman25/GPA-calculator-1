@@ -148,17 +148,7 @@ td.percent{
 	align: center;
 }
 
-table:#editTable{
-	border-collapse: separate;
-  	border-spacing: 50px 0;
-}
-
-table:#viewSemester{
-	border-collapse: separate;
-  	border-spacing: 50px 0;
-}
-
-table:#semesterGPA{
+table:.tableFormat{
 	border-collapse: separate;
   	border-spacing: 50px 0;
 }

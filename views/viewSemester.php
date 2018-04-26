@@ -1,6 +1,6 @@
 <!-- viewSemester -->
 <h1>Semester *year from DB</h1>
-<table id="viewSemester">
+<table class="tableFormat">
   <tr>
     <th>Class</th>
     <th>Grade</th>
@@ -28,7 +28,7 @@
     <td>grade % from the DB</td>
   </tr>
 </table>
-<table id="semesterGPA">
+<table class="tableFormat">
   <tr>
     <th></th>
     <th></th>
