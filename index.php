@@ -11,13 +11,13 @@
             <div class="navbar">
                 <nav id="nav01">
                     <ul id="menu">
-                        <li>
+                        <li ng-class="{active:tab.isSet(1)}">
                             <a href="#/">Main</a>
                         </li>
-                        <li>
+                        <li ng-class="{active:tab.isSet(1)}">
                             <a href="#/edit">Edit</a>
                         </li>
-                        <li>
+                        <li ng-class="{active:tab.isSet(1)}">
                             <a href="#/new">New</a>
                         </li>
                     </ul>
