@@ -3,19 +3,19 @@
 <table>
   <tr>
     <th>Class</th>
-    <th>GPA</th>
+    <th class="percent">GPA</th>
   </tr>
   <tr>
   	<td><a href= #/editGPA>Starting GPA</a></td>
-  	<td>%</td>
+  	<td class="percent">%</td>
   </tr>
   <tr>
   	<td><a href= #/viewSemester>class</a></td>
-  	<td>%</td>
+  	<td class="percent">%</td>
   </tr>
   <tr>
-  	<td></td>
-  	<td>grade % from the DB</td>
+  	<td>grade from the DB</td>
+  	<td class="percent">%</td>
   </tr>
 </table>
 <table>
