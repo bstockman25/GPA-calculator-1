@@ -30,9 +30,7 @@
   <tr>
     <td></td>
     <td></td>
-    <td>
-      <textarea rows="1" cols="5" name="GPAestimate" id="GPAestimate"></textarea>
-    </td>
+    <td><a id="GPAestimate" class="percent">%</a></td>
   </tr>
 </table>
 <input type="button" value="Update DB" onclick=""/>
