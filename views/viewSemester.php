@@ -1,6 +1,6 @@
 <!-- viewSemester -->
 <h1>Semester *year from DB</h1>
-<table class="tableFormat">
+<table class="tableFormat" id="semesterTable">
   <tr>
     <th>Class</th>
     <th>Grade</th>
@@ -30,7 +30,7 @@
   <tr>
     <td></td>
     <td></td>
-    <td><a id="GPAestimate" class="percent">%</a></td>
+    <td><a id="GPAestimate" class="tRight">%</a></td>
   </tr>
 </table>
 <input type="button" value="Update DB" onclick=""/>

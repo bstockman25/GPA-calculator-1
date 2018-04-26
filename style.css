@@ -153,6 +153,10 @@ table:.tableFormat{
   	border-spacing: 50px 0;
 }
 
+#semesterTable .tRight{
+	text-align:right;
+}
+
 footer#foot01 {
 	position: absolute;
 	top: 1150px;
