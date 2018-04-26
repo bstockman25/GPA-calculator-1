@@ -27,13 +27,6 @@
     </td>
     <td>grade % from the DB</td>
   </tr>
-</table>
-<table class="tableFormat">
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
   <tr>
     <td></td>
     <td></td>
