@@ -1,5 +1,5 @@
 <!-- New -->
-<h1>Add A Class</h1>
+<h1>Add Class</h1>
 <form action="/action_page.php">
 <p>Class Name: <input type="text" name="cName"></p>
   <p>Semester:
@@ -12,6 +12,6 @@
   <p>Class Year: <input type="text" name="cYear"></p>
   <p>Credits: <input type="text" name="cCredits"></p>
   <input type="submit" value="Submit">
-  <input type="button" value="Back" onclick="window.location.href='#/edit'"/>
+  <input type="button" value="Cancel" onclick="window.location.href='#/edit'"/>
 </form>
 <h3>{{message}}</h3>
