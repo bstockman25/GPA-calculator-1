@@ -1,6 +1,6 @@
 <!-- edit -->
 <h1>Edit</h1>
-<table>
+<table id="editTable">
   <tr>
     <th>Class</th>
     <th class="percent">GPA</th>

@@ -148,6 +148,11 @@ td.percent{
 	align: center;
 }
 
+#editTable{
+	border-collapse: separate;
+  	border-spacing: 50px 0;
+}
+
 footer#foot01 {
 	position: absolute;
 	top: 1150px;
