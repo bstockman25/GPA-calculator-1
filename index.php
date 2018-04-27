@@ -10,13 +10,10 @@
         <div class="main">
             <div class="navbar">
                 <nav id="nav01">
-<<<<<<< HEAD
                     <ul id="menu">
                         <li ng-class="{active:tab.isSet(1)}">
-=======
                     <ul id="menu" bs-active-link>
                         <li>
->>>>>>> feature/jason
                             <a href="#/">Main</a>
                         </li>
                         <li ng-class="{active:tab.isSet(1)}">

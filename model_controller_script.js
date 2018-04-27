@@ -63,7 +63,7 @@ app.controller('SemesterController', function($scope) {
   $scope.message = '';
 });
 
-<<<<<<< HEAD
+
 app.controller('TabController', function () {
         this.tab = 1;
 
@@ -75,7 +75,7 @@ app.controller('TabController', function () {
             return this.tab === tabId;
         };
     });
-=======
+
 angular.module('GPAapp')
 .directive('bsActiveLink', ['$location', function ($location) {
 return {
@@ -99,4 +99,4 @@ return {
     }
 }
 }]);
->>>>>>> feature/jason
+
