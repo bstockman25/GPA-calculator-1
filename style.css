@@ -144,6 +144,7 @@ a:hover{
 	color: #F1B82D;
 }
 
+<<<<<<< HEAD
 .percent{
 	align: center;
 }
@@ -155,6 +156,12 @@ table:.tableFormat{
 
 #semesterTable .tRight{
 	text-align:right;
+=======
+.active{
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: grey;
+>>>>>>> feature/jason
 }
 
 footer#foot01 {
