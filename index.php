@@ -10,16 +10,14 @@
         <div class="main">
             <div class="navbar">
                 <nav id="nav01">
-                    <ul id="menu">
-                        <li ng-class="{active:tab.isSet(1)}">
                     <ul id="menu" bs-active-link>
                         <li>
                             <a href="#/">Main</a>
                         </li>
-                        <li ng-class="{active:tab.isSet(1)}">
+                        <li>
                             <a href="#/edit">Edit</a>
                         </li>
-                        <li ng-class="{active:tab.isSet(1)}">
+                        <li>
                             <a href="#/new">New</a>
                         </li>
                     </ul>
@@ -52,4 +50,5 @@
             <p>  <?php echo date("Y"); ?> GPA-calculator. All rights reserved.</p>
         </footer>
     </body>
+  </body>
 </html>
