@@ -1,11 +1,22 @@
 <!-- edit -->
-
-      <h1>Edit</h1>
-      <ul>
-        <li><a href= #/editGPA>Starting GPA</a></li>
-      </ul>
-      <ul>
-        <li><a href= #/viewSemester>class</a></li>
-      </ul>
-      <h3>{{message}}</h3>
-
+<h1>Edit</h1>
+<table class="tableFormat">
+  <tr>
+    <th>Semester</th>
+    <th class="percent">GPA</th>
+  </tr>
+  <tr>
+  	<td><a href= #/editGPA>Starting GPA</a></td>
+  	<td class="percent">%</td>
+  </tr>
+  <tr>
+  	<td><a href= #/viewSemester>semester 2020</a></td>
+  	<td class="percent">%</td>
+  </tr>
+  <tr>
+  	<td>grade from the DB</td>
+  	<td class="percent">%</td>
+  </tr>
+</table>
+<table>
+<h3>{{message}}</h3>

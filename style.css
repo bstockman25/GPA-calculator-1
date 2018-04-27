@@ -23,7 +23,6 @@ body {
 	margin-bottom: 30px;
 }
 
-
 #header { 
 	height: 90px; 
 	top: 0;
@@ -93,8 +92,7 @@ ul#menu li a {
 }
 ul#menu li a:hover {
 	background-color: #F1B82D;
-} 
-
+}
 
 ul#menu2 {
 	position: absolute;
@@ -135,6 +133,28 @@ ul#menu3 li a {
 }
 ul#menu3 li a:hover {
 	background-color:#F1B82D;
+}
+
+a:visited { 
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{
+	color: #F1B82D;
+}
+
+.percent{
+	align: center;
+}
+
+table:.tableFormat{
+	border-collapse: separate;
+  	border-spacing: 50px 0;
+}
+
+#semesterTable .tRight{
+	text-align:right;
 }
 
 footer#foot01 {
