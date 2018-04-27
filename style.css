@@ -144,6 +144,12 @@ a:hover{
 	color: #F1B82D;
 }
 
+.active{
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: grey;
+}
+
 footer#foot01 {
 	position: absolute;
 	top: 1150px;

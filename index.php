@@ -10,7 +10,7 @@
         <div class="main">
             <div class="navbar">
                 <nav id="nav01">
-                    <ul id="menu">
+                    <ul id="menu" bs-active-link>
                         <li>
                             <a href="#/">Main</a>
                         </li>
