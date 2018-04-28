@@ -144,17 +144,10 @@ a:hover{
 	color: #F1B82D;
 }
 
-.percent{
-	align: center;
-}
-
-table:.tableFormat{
-	border-collapse: separate;
-  	border-spacing: 50px 0;
-}
-
-#semesterTable .tRight{
-	text-align:right;
+.active{
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: grey;
 }
 
 footer#foot01 {
