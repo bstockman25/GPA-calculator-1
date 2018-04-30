@@ -2,22 +2,22 @@
 <html ng-app="GPAapp">
     <head>
         <title>MyGPA-Calculator</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
         <link rel="stylesheet" ng-href="style.css">
     </head>
     <body>
         <div class="main">
             <div class="navbar">
                 <nav id="nav01">
-                    <ul id="menu">
-                        <li ng-class="{active:tab.isSet(1)}">
+                    <ul id="menu" bs-active-link>
+                        <li>
                             <a href="#/">Main</a>
                         </li>
-                        <li ng-class="{active:tab.isSet(1)}">
+                        <li>
                             <a href="#/edit">Edit</a>
                         </li>
-                        <li ng-class="{active:tab.isSet(1)}">
+                        <li>
                             <a href="#/new">New</a>
                         </li>
                     </ul>
@@ -50,4 +50,5 @@
             <p>  <?php echo date("Y"); ?> GPA-calculator. All rights reserved.</p>
         </footer>
     </body>
+  </body>
 </html>
