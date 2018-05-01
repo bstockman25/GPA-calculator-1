@@ -7,7 +7,7 @@
     <th>Grade</th>
   </tr>
   <tr>
-    <td><a href= #/editClass>Class Name from DB</a></td>
+    <td id=viewSemester ><a href= #/editClass>Class Name from DB</a></td>
     <td>
       <select>
         <option value="" selected disabled hidden>Choose Grade</option>
