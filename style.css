@@ -155,3 +155,22 @@ footer#foot01 {
 	bottom: 0; 
 	height:20px;   
 }
+
+.tableFormat td, .tableFormat th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tableFormat tr:nth-child(odd){background-color: rgb(216, 113, 17);}
+
+.tableFormat tr:hover {background-color: #F1B82D;}
+
+td#viewSemester a {
+	text-align: right;
+	color: #ffffff;
+}
+
+td#editGPA a{
+	text-align: right;
+	color: #ffffff;
+}

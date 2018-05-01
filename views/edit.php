@@ -6,11 +6,11 @@
     <th class="percent">GPA</th>
   </tr>
   <tr>
-  	<td><a href= #/editGPA>Starting GPA:</a></td>
+  	<td id=editGPA><a href= #/editGPA>Starting GPA:</a></td>
   	<td class="percent">%</td>
   </tr>
   <tr ng-repeat="x in semesters">
-  	<td ><a href= #/viewSemester>{{x.semester + ' ' + x.year + ':'}}</a></td>
+  	<td id=viewSemester ><a href= #/viewSemester>{{x.semester + ' ' + x.year + ':'}}</a></td>
   	<td class="percent">{{x.grade}}</td>
   </tr>
   <tr>

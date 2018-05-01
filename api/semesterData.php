@@ -8,7 +8,7 @@ $outp = '{
     {
         "semester" : "Fall",
         "year" : 2018,
-        "grade" : 4.0
+        "grade" : 3.0
     },
 
     {

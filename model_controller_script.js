@@ -44,7 +44,7 @@ app.controller('MainController', function($scope) {
 });
 
 app.controller('EditController', function($scope, $http) {
-    $http.get("semesterData.php")
+    $http.get("api/semesterData.php")
     .then(function (response) {$scope.semesters = response.data.records;});    
 });
 
