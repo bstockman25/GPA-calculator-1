@@ -11,15 +11,9 @@
             <div class="navbar">
                 <nav id="nav01">
                     <ul id="menu" bs-active-link>
-                        <li>
-                            <a href="#/">Main</a>
-                        </li>
-                        <li>
-                            <a href="#/edit">Edit</a>
-                        </li>
-                        <li>
-                            <a href="#/new">New</a>
-                        </li>
+                        <li><a href="#/">Main</a></li>
+                        <li><a href="#/edit">Edit</a></li>
+                        <li><a href="#/new">New</a></li>
                     </ul>
                 </nav>
                 <nav id="nav02">

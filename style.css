@@ -16,6 +16,7 @@ body {
 
 .navbar {
 	position: relative;
+	font-size: 0;
 	height: 60px; 
 	top: 0px;
 	width:auto;
@@ -79,15 +80,17 @@ body {
 
 ul#menu {
 	position: absolute;
-	padding: 0;
+	padding: 10px;
 	left: 3px;
 }
 ul#menu li {
 	display: inline;
+	font-size: 16px;
 }
 ul#menu li a {
 	padding: 10px 20px;
 	text-decoration: none;
+	
 	color: #ffffff;
 }
 ul#menu li a:hover {
@@ -96,22 +99,21 @@ ul#menu li a:hover {
 
 ul#menu2 {
 	position: absolute;
-	padding: 10px;
+	padding: 45px 10px 10px 10px;
 	left: 50%;
 	margin-right: -50%;
-	
 	transform: translate(-50%, -50%);
 	top: 10px;
 	
 }
 ul#menu2 li {
 	display: inline;
+	font-size: 24px;
 }
 ul#menu2 li a {
 	
 	padding: 10px 20px;
 	text-decoration: none;
-	font-size: 2em;
 	font-weight: bold;
 	color: #ffffff;
 }
@@ -121,10 +123,12 @@ ul#menu2 li a:hover {
 
 ul#menu3 {
 	position: absolute;
+	padding: 10px;
 	right: 3px;
 }
 ul#menu3 li {
 	display: inline;
+	font-size: 16px;
 }
 ul#menu3 li a {
 	padding: 10px 20px;
@@ -135,17 +139,9 @@ ul#menu3 li a:hover {
 	background-color:#F1B82D;
 }
 
-a:visited { 
-	text-decoration: none;
-	color: white;
-}
-
-a:hover{
-	color: #F1B82D;
-}
 
 .active{
-	padding: 10px 20px;
+	padding: 10px 0px;
 	text-decoration: none;
 	background-color: grey;
 }
