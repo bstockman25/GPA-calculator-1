@@ -78,6 +78,7 @@ return {
         angular.forEach(elem.find('a'), function (a) {
             a = angular.element(a);
             if (-1 !== hrefs.indexOf(a.attr('href'))) {
+              //case for having edit highlighted when in lower pages
                 a.parent().addClass('active');
             } else {
               a.parent().removeClass('active');
