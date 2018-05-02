@@ -1,11 +1,15 @@
 <?php
-$cleanTestData = htmlspecialchars($_POST['TestData']);
+header("Content-Type: application/json");
+
+//$cleanTestData = htmlspecialchars($_POST['TestData']);
+$test = json_encode($_POST);
+
 
 
 $fp = fopen('test.json', 'w');
-fwrite($fp, json_encode(array( "status" => "false","message" => $cleanTestData)));
+fwrite($fp, $test);
 fclose($fp);
 
-echo json_encode(array( "status" => "false","message" => $cleanTestData) );
+//echo json_encode(array( "status" => "false","message" => $params) );
 
 ?>
