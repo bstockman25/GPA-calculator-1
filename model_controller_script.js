@@ -48,7 +48,30 @@ app.controller('EditController', function($scope, $http) {
     .then(function (response) {$scope.semesters = response.data.records;});    
 });
 
-app.controller('NewController', function($scope) {
+app.controller('NewController', function($scope, $http) {
+    $scope.cName = null;
+    $scope.Semester = null;
+    $scope.cYear = null;
+    $scope.cCredits = null;
+    $scope.postData = function (cName, Semester, cYear, cCredits){
+    var TestData = {
+        name: cName,
+        semester: Semester,
+        year: cYear,
+        credits: cCredits
+    };
+    $http.post('api/testPost.php', JSON.stringify(TestData)).then(function (response) {
+        if (response.data)
+        // handles success:
+        $scope.message = "Post Data Submitted Successfully";
+        $scope.statusval = response.status;
+    }, function (response) {
+        // handles failure:
+        $scope.message = "Post didn't work.";
+        $scope.statusval = response.status;
+    });
+    };
+    
   $scope.message = '';
 });
 
