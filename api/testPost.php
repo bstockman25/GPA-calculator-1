@@ -2,12 +2,12 @@
 header("Content-Type: application/json");
 
 //$cleanTestData = htmlspecialchars($_POST['TestData']);
-$test = json_encode($_POST);
+$cleanTest = json_encode(htmlspecialchars($_POST));
 
 
 
 $fp = fopen('test.json', 'w');
-fwrite($fp, $test);
+fwrite($fp, $cleanTest);
 fclose($fp);
 
 //echo json_encode(array( "status" => "false","message" => $params) );

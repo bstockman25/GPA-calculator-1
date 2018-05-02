@@ -97,7 +97,7 @@ app.controller('EditController', function($scope, $http) {
     .then(function (response) {$scope.semesters = response.data.records;});    
 });
 
-app.controller('NewController', function($scope, $http) {
+app.controller('NewController', function($scope, $http, $location) {
     $scope.cName = null;
     $scope.Semester = null;
     $scope.cYear = null;
@@ -113,15 +113,16 @@ app.controller('NewController', function($scope, $http) {
         if (response.data)
         // handles success:
         $scope.message = "Post Data Submitted Successfully";
-        $scope.statusval = response.status;
+        $location.path("/");
     }, function (response) {
         // handles failure:
         $scope.message = "Post didn't work.";
         $scope.statusval = response.status;
     });
     };
+  
     
-  $scope.message = '';
+
 });
 
 app.controller('ClassController', function($scope) {

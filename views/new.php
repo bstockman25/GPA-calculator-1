@@ -1,6 +1,6 @@
 <!-- New -->
 <h1>Add Class</h1>
-<!--<form ng-submit="processForm"> -->
+<!--<form onsubmit="window.location.href='./views/edit.php';" novalidate> -->
     <p>Class Name: <input type="text" ng-model="cName"></p>
     <p>Semester:
         <select ng-model="Semester">
