@@ -12,82 +12,82 @@ A php, mysql, and angularJS GPA calculator with user data storage. The applicati
 
 ### Schema
 
-CREATE DATABASE gpaDatabase;
+	CREATE DATABASE gpaDatabase;
 
 
-CREATE TABLE Students
+	CREATE TABLE Students
 
-(
+	(
 
-studentId INT NOT NULL AUTO_INCREMENT,
+		studentId INT NOT NULL AUTO_INCREMENT,
 
-gradePoints DOUBLE NOT NULL AUTO_INCREMENT=0.0,
+		gradePoints DOUBLE NOT NULL AUTO_INCREMENT=0.0,
 
-credits INT NOT NULL AUTO_INCREMENT=0 ,
+		credits INT NOT NULL AUTO_INCREMENT=0 ,
 
-firstName VARCHAR(128) NOT NULL,
+		firstName VARCHAR(128) NOT NULL,
 
-lastName VARCHART(128) NOT NULL,
+		lastName VARCHART(128) NOT NULL,
 
-email VARCHAR(50) NOT NULL,
-
-
-FOREIGN KEY (email)  REFERENCES Authentication(email) ON DELETE CASCADE,
-
-PRIMARY KEY (studentId)
-
-);
+		email VARCHAR(50) NOT NULL,
 
 
-CREATE TABLE Classes
+		FOREIGN KEY (email)  REFERENCES Authentication(email) ON DELETE CASCADE,
 
-(
+		PRIMARY KEY (studentId)
 
-classId INT NOT NULL AUTO_INCREMENT,
-
-semesterTerm VARCHAR(128) NOT NULL,
-
-semesterYear YEAR(4) NOT NULL,
-
-className VARCHAR(128) NOT NULL,
-
-classGrade VARCHAR(128) NOT NULL,
-
-email VARCHAR(50) NOT NULL,
-
-FOREIGN KEY (email) REFERENCES Students() ON DELETE CASCADE,
-
-PRIMARY KEY (classId)
-
-);
+	);
 
 
-CREATE TABLE Authentication 
+	CREATE TABLE Classes
 
-(
+	(
 
-	email	VARCHAR(50) PRIMARY KEY,
-	
-	passwordHash	VARCHAR(40) NOT NULL,
-	
-	PRIMARY KEY (email),
-	
-	FOREIGN KEY (userId) REFERENCES Salt() ON DELETE CASCADE
+		classId INT NOT NULL AUTO_INCREMENT,
 
-);
+		semesterTerm VARCHAR(128) NOT NULL,
+
+		semesterYear YEAR(4) NOT NULL,
+
+		className VARCHAR(128) NOT NULL,
+
+		classGrade VARCHAR(128) NOT NULL,
+
+		email VARCHAR(50) NOT NULL,
+
+		FOREIGN KEY (email) REFERENCES Students() ON DELETE CASCADE,
+
+		PRIMARY KEY (classId)
+
+	);
 
 
-CREATE TABLE Salt 
+	CREATE TABLE Authentication 
 
-(
+	(
 
-    userId	    VARCHAR(50) REFERENCES user_info ON DELETE CASCADE,
-    
-    salt			VARCHAR(40) NOT NULL,
-    
-    PRIMARY KEY (userId),
+		email VARCHAR(50) PRIMARY KEY,
 
-);
+		passwordHash VARCHAR(40) NOT NULL,
+
+		PRIMARY KEY (email),
+
+		FOREIGN KEY (userId) REFERENCES Salt() ON DELETE CASCADE
+
+	);
+
+
+	CREATE TABLE Salt 
+
+	(
+
+	    userID VARCHAR(50) REFERENCES user_info ON DELETE CASCADE,
+
+	    salt VARCHAR(40) NOT NULL,
+
+	    PRIMARY KEY (userId),
+
+	);
 
 
 ### ERD 
