@@ -10,7 +10,7 @@
   	<td class="percent">%</td>
   </tr>
   <tr ng-repeat="x in semesters">
-  	<td id=viewSemester ><a href= #/viewSemester on-click="sendSemster("' +{{x.semester}} + '")">{{x.semester + ' ' + x.year + ':'}}</a></td> 
+  	<td id=viewSemester ><a href= #/viewSemester >{{x.semester + ' ' + x.year + ':'}}</a></td> 
   	<td class="percent">{{x.grade}}</td>
   </tr>
   <tr>

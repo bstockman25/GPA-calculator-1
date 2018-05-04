@@ -92,15 +92,9 @@ app.controller('MainController', function($scope) {
   $scope.message = '';
 });
 
-app.controller('EditController', function($scope, $http, editData) {
+app.controller('EditController', function($scope, $http) {
     $http.get("api/semesterData.php")
     .then(function (response) {$scope.semesters = response.data.records;});
-    // test
-    this.sendSemester = function(data){
-        
-    };
-
-    
 });
 
 app.controller('NewController', function($scope, $http, $location) {
