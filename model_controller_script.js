@@ -95,11 +95,12 @@ app.controller('MainController', function($scope) {
 app.controller('EditController', function($scope, $http, $location, editData) {
     $http.get("api/semesterData.php")
     .then(function (response) {$scope.semesters = response.data.records;});
-    $scope.set = function(cName, Smstr, cYear, cCredits, url){
+    $scope.set = function(cName, Smstr, cYear, cCredits, cGrade, url){
         editData.cName = cName;
         editData.Semester = Smstr;
         editData.cYear = cYear;
         editData.cCredits = cCredits;
+        editData.cGrade= cGrade;
         $location.path(url);
     }
 });
@@ -109,41 +110,73 @@ app.controller('NewController', function($scope, $http, $location) {
     $scope.Semester = null;
     $scope.cYear = null;
     $scope.cCredits = null;
-    $scope.postData = function (cName, Semester, cYear, cCredits){
-    var TestData = {
+    $scope.cGrade = null;
+    $scope.postData = function (cName, Semester, cYear, cCredits, cGrade){
+    var classData = {
         name: cName,
         semester: Semester,
         year: cYear,
-        credits: cCredits
+        credits: cCredits,
+        grade: cGrade
     };
-    $http.post('api/testPost.php', TestData).then(function (response) {
+    $http.post('api/testPost.php', classData).then(function (response) {
         if (response.data)
         // handles success:
         $scope.message = "Post Data Submitted Successfully";
-        $location.path("/");
+        $location.path("/edit");
     }, function (response) {
         // handles failure:
         $scope.message = "Post didn't work.";
         $scope.statusval = response.status;
     });
     };
-  
-    
-
 });
 
-app.controller('ClassController', function($scope, editData) {
+app.controller('ClassController', function($scope, $http, $location, editData) {
     var ctr = $scope;
     ctr.Name = editData.cName;
     ctr.Semester = editData.Semester;
     ctr.cYear = editData.cYear;
     ctr.cCredits = editData.cCredits;
-    
-  $scope.message = '';
+    ctr.cGrade=editData.cGrade;
+    // this function is the same as "add" but will need to be treated as an update in the php file
+    $scope.postData = function (cName, Semester, cYear, cCredits, cGrade){
+    var classData = {
+        name: cName,
+        semester: Semester,
+        year: cYear,
+        credits: cCredits,
+        grade: cGrade
+    };
+    $http.post('api/testPost.php', classData).then(function (response) {
+            if (response.data)
+            // handles success:
+            $scope.message = "Post Data Submitted Successfully";
+            $location.path("/edit");
+        }, function (response) {
+            // handles failure:
+            $scope.message = "Post didn't work.";
+            $scope.statusval = response.status;
+        });
+    };  
 });
 
-app.controller('GPAController', function($scope) {
-  $scope.message = '';
+app.controller('GPAController', function($scope, $http, $location, editData) {
+    $scope.cTaken = null;
+    $scope.pointsEarned = null;
+    $scope.postData = function (cTaken, pointsEarned){
+        var startingGPA = {
+            credits: cTaken,
+            gradePoints: pointsEarned
+        };
+        $http.post('api/testPost.php', startingGPA).then(function (response){
+            if (response.data)
+                $scope.message = "Submitted Successfully";
+                $location.path("/edit");
+        }, function (response) {
+            $scope.message = "Submit error";    
+        });
+    };
 });
 
 app.controller('SemesterController', function($scope) {
@@ -151,10 +184,13 @@ app.controller('SemesterController', function($scope) {
 });
 
 app.service('editData', function(){
-    this.cName = 'testest';
-    this.Semester = 'Interim';
-    this.cYear = '2018';
-    this.cCredits = '5';
+    this.cName = null;
+    this.Semester = null;
+    this.cYear = null;
+    this.cCredits = null;
+    this.cGrades = 0;
+    this.cTaken = null;
+    this.pointsEarned = null;
 })
 
 angular.module('GPAapp')

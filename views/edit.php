@@ -12,7 +12,7 @@
   	<td class="percent">%</td>
   </tr>
   <tr ng-repeat="x in semesters">
-  	<td id=viewSemester ><!--<a href= #/viewSemester >--><!--</a>--><button ng-click="set(x.name, x.semester, x.year, x.credits, '/editClass')">Edit</button>
+  	<td id=viewSemester ><button ng-click="set(x.name, x.semester, x.year, x.credits, x.grade, '/editClass')">Edit</button>
         {{x.semester + ' ' + x.year + ':'}}</td> 
     <td>{{x.name + ' - ' + x.credits + ' credits'}}</td>
   	<td class="percent">{{x.grade}}</td>
