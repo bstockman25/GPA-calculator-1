@@ -92,9 +92,13 @@ app.controller('MainController', function($scope) {
   $scope.message = '';
 });
 
-app.controller('EditController', function($scope, $http) {
+app.controller('EditController', function($scope, $http, $location, editData) {
     $http.get("api/semesterData.php")
     .then(function (response) {$scope.semesters = response.data.records;});
+    $scope.set = function(stuff, url){
+        editData.Semester = stuff;
+        $location.path(url);
+    }
 });
 
 app.controller('NewController', function($scope, $http, $location) {
