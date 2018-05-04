@@ -92,9 +92,15 @@ app.controller('MainController', function($scope) {
   $scope.message = '';
 });
 
-app.controller('EditController', function($scope, $http) {
+app.controller('EditController', function($scope, $http, editData) {
     $http.get("api/semesterData.php")
-    .then(function (response) {$scope.semesters = response.data.records;});    
+    .then(function (response) {$scope.semesters = response.data.records;});
+    // test
+    this.sendSemester = function(data){
+        
+    };
+
+    
 });
 
 app.controller('NewController', function($scope, $http, $location) {
@@ -125,7 +131,13 @@ app.controller('NewController', function($scope, $http, $location) {
 
 });
 
-app.controller('ClassController', function($scope) {
+app.controller('ClassController', function($scope, editData) {
+    var ctr = $scope;
+    ctr.Name = editData.cName;
+    ctr.Semester = editData.Semester;
+    ctr.cYear = editData.cYear;
+    ctr.cCredits = editData.cCredits;
+    
   $scope.message = '';
 });
 
@@ -136,6 +148,13 @@ app.controller('GPAController', function($scope) {
 app.controller('SemesterController', function($scope) {
   $scope.message = '';
 });
+
+app.service('editData', function(){
+    this.cName = 'testest';
+    this.Semester = 'Interim';
+    this.cYear = '2018';
+    this.cCredits = '5';
+})
 
 angular.module('GPAapp')
 .directive('bsActiveLink', ['$location', function ($location) {
