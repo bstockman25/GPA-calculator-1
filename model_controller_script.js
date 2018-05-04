@@ -95,8 +95,11 @@ app.controller('MainController', function($scope) {
 app.controller('EditController', function($scope, $http, $location, editData) {
     $http.get("api/semesterData.php")
     .then(function (response) {$scope.semesters = response.data.records;});
-    $scope.set = function(stuff, url){
-        editData.Semester = stuff;
+    $scope.set = function(cName, Smstr, cYear, cCredits, url){
+        editData.cName = cName;
+        editData.Semester = Smstr;
+        editData.cYear = cYear;
+        editData.cCredits = cCredits;
         $location.path(url);
     }
 });
