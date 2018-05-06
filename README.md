@@ -104,3 +104,6 @@ A php, mysql, and angularJS GPA calculator with user data storage. The applicati
 - Delete
 
 ### Video Demonstration
+
+https://youtu.be/lsFpF476eno
+
