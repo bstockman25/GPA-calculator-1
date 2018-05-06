@@ -98,10 +98,13 @@ A php, mysql, and angularJS GPA calculator with user data storage. The applicati
 
 ### CRUD
 
-- Create
-- Read
-- Update
-- Delete
+- Create: from the Login button, you have the option to register for an account by clicking "New user Register for MyGPA." From here you enter your user data and create a password, which is all saved in the DB.
+
+- Read: Once you have created an account, you are taken to your "User Settings" window, which can also be accessed any time that you are logged in by clicking the button with your username at the top right side of the menu bar. The "User Settings" window displays your account details from the DB.
+
+- Update: On the "User Settings" window, you can update any of the profile information, as well as your starting GPA information, and click "Submit" to update this information in the DB.
+
+- Delete: On the "User Settings" window, you have the option to completely delete all of your user settings and save profile information from the DB by clicking the "Delete User Account" at the bottom of the screen.
 
 ### Video Demonstration
 
