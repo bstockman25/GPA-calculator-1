@@ -1,7 +1,7 @@
 <?php
     include "database.php";
-    $dbconn = mysqli_connect("host=$dbhost dbname=$dbname password=$dbpass user=$dbuser")
+    $dbconn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
         /*************DONT LEAVE THIS LIKE THIS IN PRODUCTION!!!!!!*****************/
-        or die("Could not connect: " .mysqli_error()."<br>\nhost = $dbhost<br>\ndbname = $dbname<br>\npassword = $dbpass<br>\nuser = $dbuser"
-    );
+        //or die("Could not connect: " .mysqli_error()."<br>\nhost = $dbhost<br>\ndbname = $dbname<br>\npassword = $dbpass<br>\nuser = $dbuser"
+    //);
 ?>

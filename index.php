@@ -1,3 +1,9 @@
+<?php
+    if(session_id() == '' || !isset($_SESSION)) {
+        // session isn't started
+        session_start();
+    }
+?>
 <!doctype html>
 <html ng-app="GPAapp">
     <head>
@@ -25,9 +31,15 @@
                 </nav>
                 <nav id="nav03">
                     <ul id="menu3">
-                        <li>
-                            <a href="#/login" onclick="window.location.href='#/login'">Log In</a>
-                        </li>
+                        <?php
+                            if($_SESSION['logged'] == true){
+                                echo '<li><a href="#/user">'.$_SESSION['username'].'</a></li>';
+                                echo '<li><a href="/logout/">Log Out</a></li>';
+                            }
+                            else{
+                                echo'<li><a href="#/login">Log In</a></li>';
+                            }
+                        ?>
                     </ul>
                 </nav>
             </div>

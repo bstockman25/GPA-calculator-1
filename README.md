@@ -8,6 +8,8 @@
 
 ### GPA-calculator-1
 
+http://mygpa.ninja/
+
 A php, mysql, and angularJS GPA calculator with user data storage. The application allows the user to create a private account where they will be able to enter their current GPA and classes not only along with its credit count. The application is divided by semesters and allows the user to enter expected grades for future classes or classes that haven't been graded yet to simulate their future GPA.
 
 ### Schema

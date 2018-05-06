@@ -84,12 +84,37 @@ app.config(function($routeProvider) {
     controller  : 'SemesterController'
   })
 
+  .when('/login', {
+    templateUrl : './views/login.php',
+    controller  : 'UserController'
+  })
+
+  .when('/user', {
+    templateUrl : './views/user.php',
+    controller  : 'UserController'
+  })
+
   .otherwise({redirectTo: '/'});
 });
 
 // Controllers
 app.controller('MainController', function($scope) {
   $scope.message = '';
+});
+
+app.controller('UserController', function($scope) {
+  $scope.message = '';
+//app.controller('UserController', function($scope, $http, $location, editData) {
+  /*$http.get("api/semesterData.php")
+  .then(function (response) {$scope.semesters = response.data.records;});
+  $scope.set = function(cName, Smstr, cYear, cCredits, cGrade, url){
+      editData.cName = cName;
+      editData.Semester = Smstr;
+      editData.cYear = cYear;
+      editData.cCredits = cCredits;
+      editData.cGrade= cGrade;
+      $location.path(url);
+  }*/
 });
 
 app.controller('EditController', function($scope, $http, $location, editData) {

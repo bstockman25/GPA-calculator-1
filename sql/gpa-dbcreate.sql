@@ -1,40 +1,36 @@
-DROP SCHEMA IF EXISTS gpa CASCADE;
+DROP SCHEMA IF EXISTS gpa;
 
 CREATE SCHEMA gpa;
-SET SEARCH_PATH = gpa;
+--SET SEARCH_PATH = gpa;
 
 
-DROP TABLE IF EXISTS user_info;
-CREATE TABLE user_info (
-	userID			varchar(50) REFERENCES user_info on DELETE CASCADE,
-	registration_date 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    lastName		varchar(50) NOT NULL,
-    firstName		varchar(50) NOT NULL,
-	email			varchar(50) NOT NULL,
+DROP TABLE IF EXISTS User_Students;
+CREATE TABLE User_Students (
+	userID VARCHAR(50) NOT NULL,
+	lastName VARCHAR(50) NOT NULL,
+    firstName VARCHAR(50) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	gradePoints FLOAT,
+	credits INT,
 	PRIMARY KEY (userID)
 );
 
-DROP TABLE IF EXISTS user_authentication;
-CREATE TABLE user_authentication (
-	userID			varchar(50) REFERENCES user_info on DELETE CASCADE,
-	passwordHash	varchar(40) NOT NULL,
+DROP TABLE IF EXISTS User_Authentication;
+CREATE TABLE User_Authentication (
+    userID varchar(50),
+    passwordHash varchar(40) NOT NULL,
+	salt varchar(40) NOT NULL,
 	PRIMARY KEY (userID)
 );
 
-DROP TABLE IF EXISTS user_salt;
-CREATE TABLE user_salt (
-    userID			varchar(50) REFERENCES user_info on DELETE CASCADE,
-    salt			varchar(40) NOT NULL,
-    PRIMARY KEY (userID)
-);
-
-DROP TABLE IF EXISTS user_log;
-CREATE TABLE user_log (
-	log_id  	SERIAL PRIMARY KEY,
-	userID		varchar(50) REFERENCES user_info on DELETE CASCADE,
-	ip_address 	VARCHAR(15) NOT NULL,
-	log_date 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	phpSID		VARCHAR(50) NOT NULL,
-	urlUID		VARCHAR(50) NOT NULL,
-	action 		VARCHAR(50) NOT NULL
+DROP TABLE IF EXISTS User_Classes;
+CREATE TABLE User_Classes
+(
+	classId INT NOT NULL AUTO_INCREMENT,
+	userID varchar(50),
+	semesterTerm VARCHAR(128) NOT NULL,
+	semesterYear VARCHAR(4) NOT NULL,
+	className VARCHAR(128) NOT NULL,
+	classGrade DOUBLE NOT NULL, 
+	PRIMARY KEY (classId)
 );
