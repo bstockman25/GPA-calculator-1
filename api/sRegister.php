@@ -103,7 +103,7 @@
             
         
         //echo '<br><a href="http://mygpa.ninja/">Return to MyGPA home screen</a><br>\n\n';
-        header( 'Location: http://mygpa.ninja/#/login' );
+        header( 'Location: http://mygpa.ninja/#/user' );
         ob_flush();
     }
     else {
